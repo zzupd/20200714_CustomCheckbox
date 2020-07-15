@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 체크박스</title>
+    <style type="text/css">
+        input.css-checkbox {
+            border: none;
+            background: none;
+            position: absolute;
+            left: -10px;
+/*            display: none;*/
+
+        }
+
+
+        input.css-checkbox+label {
+            height: 20px;
+            line-height: 20px;
+            padding-left: 30px;
+/*            border: 1px solid #f00;*/
+
+            background-image: url(images/bg_checkbox.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size:  20px 40px;
+/*         원본이미지 30*60  */
+            vertical-align: middle;
+            display: inline-block;
+
+            transition: all 2s;
+        }
+        input.css-checkbox:checked+label {
+/*            border: 1px solid #00f;*/
+            background-position: 0 -20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>약관동의</h2>
+    <input type="checkbox" id="chk1" class="css-checkbox">
+    <label for="chk1">서비스 이용약관 동의</label>
+    <br>
+    <input type="checkbox" id="chk2" class="css-checkbox" checked>
+    <label for="chk2">개인정보 취급방침 동의</label>
+    <br>
+    <input type="checkbox" id="chk3" class="css-checkbox">
+    <label for="chk3">위치정보 활용 동의</label>
+
+
+</body>
+
+</html>
